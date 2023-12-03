@@ -5,8 +5,11 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head> 
   <body> 
-    <a-scene  vr-mode-ui="enabled: false" embedded arjs> 
-     <a-marker preset="hiro">
+    <a-scene  vr-mode-ui="enabled: false" embedded arjs>
+      <a-assets>
+        <a-asset-item id="cat" src="assets/cat.glb"></a-asset-item>
+      </a-assets>
+     <a-marker preset="kanji">
       <a-box color="#0095DD" rotation="20 40 0" position="0 1 0">
         <a-animation
           attribute="rotation"
@@ -17,7 +20,10 @@
           repeat="indefinite"
           easing="ease">
         </a-animation>
-      </a-box>
+      </a-box>       
+     </a-marker>
+     <a-marker preset="hiro">
+        <a-entity gltf-model="#cat"></a-entity>
     　</a-marker>
       <a-marker preset="custom"  type="pattern" url="assets/pattern-marker.patt">
         <a-box color="yellow" position="0 1 0" depth="0.5" width="0.5" height="0.5">
