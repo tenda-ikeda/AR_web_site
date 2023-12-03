@@ -10,7 +10,17 @@
         <a-box position="0 0.5 0" material="color: red; transparent: true; opacity: 0.50;"></a-box>
     　</a-marker>
       <a-marker preset="custom"  type="pattern" url="assets/pattern-marker.patt">
-        <a-box color="yellow" position="0 1 0" depth="0.5" width="0.5" height="0.5"></a-box> 
+        <a-box color="yellow" position="0 1 0" depth="0.5" width="0.5" height="0.5">
+          <a-animation
+            attribute="rotation"
+            from="20 0 0"
+            to="20 360 0"
+            direction="alternate"
+            dur="4000"
+            repeat="indefinite"
+            easing="ease">
+          </a-animation>
+        </a-box> 
         <a-sphere color="red" position="0 1 0" width="0.5" height="0.5" material="src: #earth-sphere; transparent: true; opacity: 0.40;"></a-sphere>
         <a-sphere color="blue" position="0 1 0" width="0.7" height="0.7" material="src: #earth-sphere; transparent: true; opacity: 0.90;" wireframe="true"></a-sphere>
       </a-marker> 
