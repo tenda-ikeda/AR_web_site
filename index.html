@@ -11,10 +11,10 @@
         <a-asset-item id="snowman" src="assets/snowman.glb"></a-asset-item>
       </a-assets>
       <a-marker type="barcode" value="2">
-        <a-plane position="0 0 0" 
-                 rotation="-90 0 0"
-               material="color: red">
-        </a-plane>
+        <a-box color="yellow" position="0 1 0" depth="0.5" width="0.5" height="0.5"></a-box>
+      </a-marker>
+      <a-marker type="barcode" value="3">
+        <a-box color="red" position="0 1 0" depth="0.5" width="0.5" height="0.5"></a-box>
       </a-marker>
       <a-marker preset="hiro">
         <a-entity gltf-model="#cat" position="0 1 0" width="0.7" height="0.7">
@@ -42,8 +42,7 @@
         </a-box>
       </a-marker>
       <a-marker preset="custom"  type="pattern" url="assets/pattern-marker.patt">
-        <a-box color="yellow" position="0 1 0" depth="0.5" width="0.5" height="0.5">
-        </a-box>
+        <a-box color="yellow" position="0 1 0" depth="0.5" width="0.5" height="0.5"></a-box>
         <a-sphere color="red" position="0 1 0" width="0.5" height="0.5" material="src: #earth-sphere; transparent: true; opacity: 0.40;"></a-sphere>
         <a-sphere color="blue" position="0 1 0" width="0.7" height="0.7" material="src: #earth-sphere; transparent: true; opacity: 0.90;" wireframe="true"></a-sphere>
       </a-marker>
