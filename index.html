@@ -5,7 +5,8 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
-    <a-scene  vr-mode-ui="enabled: false" embedded arjs>
+    <!-- a-scene  vr-mode-ui="enabled: false" embedded arjs -->
+    <a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
       <a-assets>
         <a-asset-item id="cat" src="assets/cat.glb"></a-asset-item>
         <a-asset-item id="snowman" src="assets/snowman.glb"></a-asset-item>
